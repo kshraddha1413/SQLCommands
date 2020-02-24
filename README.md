@@ -51,5 +51,30 @@ SELECT * FROM Customers
 WHERE NOT Country='Germany';
 
 
+The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+
+**SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;**
+
+
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+
+Insert 
+1)into all columns
+2)into specific columns
+
+**INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');**
+
+
+**INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');**
+
+
+
+
 
 
