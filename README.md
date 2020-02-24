@@ -75,6 +75,50 @@ VALUES ('Cardinal', 'Stavanger', 'Norway');**
 
 
 
+Update
+
+**UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;**
+
+
+e.g.
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+
+**Be careful when updating records. If you omit the WHERE clause, ALL records will be updated!**
+
+
+
+Delete:
+
+**DELETE FROM table_name WHERE condition;**
+e.g.
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+
+Delete All Records:
+**DELETE FROM Customers;**
+
+Select top or Limit clause or rownum(in oracle) and select top percent
+
+SELECT TOP 3 * FROM Customers;
+
+    or
+    
+SELECT * FROM Customers LIMIT 3;
+
+      or
+SELECT * FROM Customers WHERE ROWNUM <= 3;
+
+
+SELECT TOP 50 PERCENT * FROM Customers;
+
+
+
+
 
 
 
